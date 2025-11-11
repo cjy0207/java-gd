@@ -1,0 +1,21 @@
+package sec03.exam01;
+
+public class PromotionExample {
+	public static void main(String[] args) {
+		byte byteValue = 10;
+		int intValue = byteValue;//1byte -> 4byte, 자동 형변환
+		System.out.println(intValue);
+		
+		char cahrValue = '가';
+		intValue = cahrValue;
+		System.out.println(intValue);//유니코드 값 출력
+		
+		intValue = 30;
+		long longValue = intValue;
+		System.out.println(longValue);
+		
+		longValue = 100;
+		float floatValue= longValue;
+		System.out.println(floatValue);
+	}
+}

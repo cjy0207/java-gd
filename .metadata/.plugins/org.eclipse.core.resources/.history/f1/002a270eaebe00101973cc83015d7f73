@@ -1,0 +1,14 @@
+package sec03.exam01;
+
+import com.sun.jdi.CharValue;
+
+public class PromotionExample {
+	public static void main(String[] args) {
+		byte byteValue = 10;
+		int intValue = byteValue;//1byte -> 4byte, 자동 형변환
+		System.out.println(intValue);
+		
+		char cahrValue = '가';
+		intValue = CharValue;
+	}
+}

@@ -1,0 +1,18 @@
+package sec02.exam07;
+
+public class FloatDoubleExample {
+	public static void main(String[] args) {
+		//float(4byte) double(8byte)
+		//부동 소수점 : 가수* 10의 지수 제곱으로 표현
+		//부동 소수점 방식으로 저장 => 같은크기를 같는 int, long 보다 더 큰 범우를 지정할 수 있
+		
+		//float var1 = 3.14; //자바 컴파일러는 실수 리터럴을 기본적으로 doubl타입으로 해석
+		//double 타입을 float타입에 바로 넣을 수 없음
+		//F또는 f를 붙여 float표현
+		float var2 = 3.14f;
+		float var3 = 3.14f;
+		
+		System.out.println(var2);
+		System.out.println(var3);
+	}
+}

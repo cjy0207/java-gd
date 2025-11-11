@@ -1,0 +1,30 @@
+package sec03.exam01;
+
+public class PromotionExample {
+	public static void main(String[] args) {
+		byte byteValue = 10;
+		int intValue = byteValue;//1byte -> 4byte, 자동 형변환
+		System.out.println(intValue);
+		
+		char cahrValue = '가';
+		intValue = cahrValue;
+		System.out.println(intValue);//유니코드 값 출력
+		
+		intValue = 30;
+		long longValue = intValue;
+		System.out.println(longValue);
+		
+		longValue = 100;
+		float floatValue= longValue; //실제 저장할 수 있는 값의 범위는 long < float, 자동 형변환
+		System.out.println(floatValue);
+		
+		floatValue = 100.5F;
+		float doubleValue= floatValue;
+		System.out.println(doubleValue);
+		
+		
+		//주의 byte -> char 자동 형변환 불가
+		byte byteVal = 65;
+		//char charVal = byteVal; /char는 음수를 포한하지 않는데, byte는 음수를 포
+	}
+}
