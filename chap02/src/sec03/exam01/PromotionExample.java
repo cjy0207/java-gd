@@ -26,5 +26,7 @@ public class PromotionExample {
 		//주의 byte -> char 자동 형변환 불가
 		byte byteVal = 65;
 		//char charVal = byteVal; /char는 음수를 포한하지 않는데, byte는 음수를 포함
+		
+		
 	}
 }
