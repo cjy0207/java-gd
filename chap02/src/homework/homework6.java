@@ -17,6 +17,7 @@ public class homework6 {
 		System.out.printf("입력한 숫자의 제곱은 %d입니다.", result);
 		
 		
+		
 	}
 
 }

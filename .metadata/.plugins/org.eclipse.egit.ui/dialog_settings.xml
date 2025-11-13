@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<list key="CommitDialog.authorValues">
+		<item value="cjy0207 &lt;jiyunjiyun0723@naver.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="cjy0207 &lt;jiyunjiyun0723@naver.com&gt;"/>
+	</list>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
-		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="true"/>
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
 		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
 		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
 		<item key="sortItemState" value="false"/>
@@ -12,5 +18,18 @@
 		<item key="DIALOG_WIDTH" value="620"/>
 		<item key="DIALOG_HEIGHT" value="377"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="393"/>
+		<item key="DIALOG_Y_ORIGIN" value="165"/>
+		<item key="DIALOG_WIDTH" value="650"/>
+		<item key="DIALOG_HEIGHT" value="445"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
 	</section>
 </section>
