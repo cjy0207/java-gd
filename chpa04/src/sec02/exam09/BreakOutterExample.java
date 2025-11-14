@@ -1,0 +1,32 @@
+package sec02.exam09;
+
+public class BreakOutterExample {
+
+	public static void main(String[] args) {
+		
+		for(int i =0 ; i <5; i++) {
+			for(int j=0; j<5; j++) {
+				if(j==3) break;	// 가장 가까운 for문을 빠져나간다
+				
+				System.out.println("i= " + i + ", j=" + j);
+			}
+			
+		}
+		
+		System.out.println("종료");
+		
+		System.out.println();
+		
+		//이름
+		Outter : for(char upper = 'A'; upper <= 'Z'; upper++) {
+			for(char lower = 'a'; lower <= 'z'; lower++) {
+				System.out.println(upper+"-"+lower);
+				if(lower== 'g') {
+					break Outter; //Label이 지정딘 for문을 빠져나감
+				}
+			}
+		}
+		System.out.println("종료");
+	}
+
+}
