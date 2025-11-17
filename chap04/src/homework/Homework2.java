@@ -12,6 +12,10 @@ public class Homework2 {
 		System.out.print("기온 : ");
 		int C = sc.nextInt();
 		
+		//early return pattern
+		//에러나 예외 조건을 먼저 검사하고 처리 한 다음, 성공 케이스는 마지막에 처리하는 법
+		//코드 중첩을 줄이고, 가독성이 좋아짐
+		
 		if(month == 3 || month == 4 || month == 5) System.out.print("봄");
 		else if(month == 6 || month == 7 || month == 8) {
 			System.out.print("여름 ");

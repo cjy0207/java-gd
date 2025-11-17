@@ -42,11 +42,9 @@ public class OperationPromotionExample {
 //		정수 결과: 15
 //		실수 결과: 15.7
 		
-		
-		int num1 = 10;
-		double num2 = 5.7;
-		System.out.println((int) (num1+num2));
-		System.out.println(num1+num2);
+		int num = 10;
+		double d = 5.7;
+		System.out.print((double) num + d);
 		
 		
 		
