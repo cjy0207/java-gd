@@ -6,5 +6,6 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="sun.text.resources.ext.JavaTimeSupplementary_it_CH"/>
     <fullyQualifiedTypeName name="jdk.vm.ci.hotspot.HotSpotResolvedJavaType"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
