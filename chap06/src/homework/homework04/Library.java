@@ -29,7 +29,6 @@ public class Library {
                 break;
             }
         }
-
         System.out.println("영문자 포함 여부 : " + hasAlphabet);
     }
 	
