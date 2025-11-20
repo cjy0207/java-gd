@@ -1,4 +1,4 @@
-package sec06.exam07;
+package homework.homework07;
 
 import java.util.Scanner;
 

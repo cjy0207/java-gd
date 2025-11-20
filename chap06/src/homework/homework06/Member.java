@@ -1,4 +1,4 @@
-package sec06.exam06;
+package homework.homework06;
 
 public class Member {
 
