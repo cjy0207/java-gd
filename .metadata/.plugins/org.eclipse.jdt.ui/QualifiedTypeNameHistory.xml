@@ -23,6 +23,17 @@
     <fullyQualifiedTypeName name="homework.homework01.Employee"/>
     <fullyQualifiedTypeName name="homework.homework02.Person"/>
     <fullyQualifiedTypeName name="sec06.exam06.Member"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="sec06.exam07.Ractangle"/>
+    <fullyQualifiedTypeName name="sec01.exam01.DmbCellPhone"/>
+    <fullyQualifiedTypeName name="sec01.exam01.CellPhone"/>
+    <fullyQualifiedTypeName name="sec01.exam02.Student"/>
+    <fullyQualifiedTypeName name="sec01.exam03.Calculator"/>
+    <fullyQualifiedTypeName name="sec01.exam03.Computer"/>
+    <fullyQualifiedTypeName name="sec01.exam03_2.CardPayment"/>
+    <fullyQualifiedTypeName name="sec01.exam03_2.PaypalPayment"/>
+    <fullyQualifiedTypeName name="sec01.exam03_2.BankTransferPayment"/>
+    <fullyQualifiedTypeName name="sec01.exam04.SupersonicAirplane"/>
+    <fullyQualifiedTypeName name="sec02.exam02.Parent"/>
+    <fullyQualifiedTypeName name="homework.homework08.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
