@@ -35,5 +35,15 @@
     <fullyQualifiedTypeName name="sec01.exam04.SupersonicAirplane"/>
     <fullyQualifiedTypeName name="sec02.exam02.Parent"/>
     <fullyQualifiedTypeName name="homework.homework08.Employee"/>
+    <fullyQualifiedTypeName name="sec02.exam03_2.PaymentService"/>
+    <fullyQualifiedTypeName name="sec02.exam03_2.CardPayment"/>
+    <fullyQualifiedTypeName name="sec03.exam01.SmartPhone"/>
+    <fullyQualifiedTypeName name="homework.homework2.Cake"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="homework.homework2.GreenTea"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="chap08.homework.homework1.Product"/>
+    <fullyQualifiedTypeName name="chap08.homework.homework2.Dish"/>
+    <fullyQualifiedTypeName name="homework.homework2.ChocolateController"/>
+    <fullyQualifiedTypeName name="homework.homework2.Chocolate"/>
 </qualifiedTypeNameHistroy>
