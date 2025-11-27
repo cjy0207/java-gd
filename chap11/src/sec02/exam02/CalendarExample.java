@@ -1,0 +1,157 @@
+package sec02.exam02;
+
+import java.time.DayOfWeek;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Period;
+import java.time.format.TextStyle;
+import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
+import java.util.DuplicateFormatFlagsException;
+import java.util.Locale;
+
+public class CalendarExample {
+
+	public static void main(String[] args) {
+//		Calendar now = new Calendar();
+		Calendar now = Calendar.getInstance(); // Calendar 하위(자식) 객체를 리턴 (현재 시스템에 맞는)
+		
+		int year = now.get(Calendar.YEAR); // 연도
+		int month = now.get(Calendar.MONTH) + 1; // 월: 0~11
+		int day = now.get(Calendar.DAY_OF_MONTH); // 일: 1~31
+		
+		System.out.print(year + "년 ");
+		System.out.print(month + "월 ");
+		System.out.println(day + "일 ");
+		
+		int week = now.get(Calendar.DAY_OF_WEEK); // 요일: 1(일)~7(토)
+		String strWeek = null;
+		
+		switch (week) {
+			case Calendar.MONDAY:    strWeek = "월"; break;
+			case Calendar.TUESDAY:   strWeek = "화"; break;
+			case Calendar.WEDNESDAY: strWeek = "수"; break;
+			case Calendar.THURSDAY:  strWeek = "목"; break;
+			case Calendar.FRIDAY:    strWeek = "금"; break;
+			case Calendar.SATURDAY:  strWeek = "토"; break;
+			case Calendar.SUNDAY:    strWeek = "일"; break;
+		}
+		
+		System.out.print(strWeek + "요일 ");
+		
+		int amPm = now.get(Calendar.AM_PM); // 오전: 0, 오후: 1
+		String strAmPm = null;
+		
+		if (amPm == Calendar.AM) {
+			strAmPm = "오전";
+		} else {
+			strAmPm = "오후";			
+		}
+		
+		System.out.println(strAmPm + " ");
+		
+		int hour = now.get(Calendar.HOUR); // 시
+		int minute = now.get(Calendar.MINUTE); // 분
+		int second = now.get(Calendar.SECOND); // 초
+		
+		System.out.print(hour + "시 ");
+		System.out.print(minute + "분 ");
+		System.out.println(second + "초 ");
+		
+		System.out.println("==========================");
+		
+		// 자바 8 이후 권장 방식
+		// Calendar 대신 java.time API로 대체
+		// 현재 날짜/시간 얻기
+		LocalDateTime now2 = LocalDateTime.now();
+		
+		// 날짜 구성 요소 얻기
+		int year2 = now2.getYear(); // 연도
+		int month2 = now2.getMonthValue(); // 월: 1~12
+		int day2 = now2.getDayOfMonth(); // 일: 1~31
+		
+		System.out.print(year2 + "년 ");
+		System.out.print(month2 + "월 ");
+		System.out.println(day2 + "일 ");
+		
+		DayOfWeek dayOfWeek = now2.getDayOfWeek(); // MONDAY~SUNDAY
+//		System.out.println(dayOfWeek);
+		String strWeek2 = dayOfWeek.getDisplayName(TextStyle.SHORT, Locale.KOREAN); // 월, 화, 수 ...
+		System.out.print(strWeek2 + "요일 ");
+		
+		// 오전/오후 구분
+		int hour24 = now2.getHour(); // 24시간제 시각: 0~23
+		String strAmPm2 = hour24 < 12 ? "오전" : "오후";
+		System.out.println(strAmPm2 + " ");
+		
+		// 12시간제 시각: 1~12
+		int hour12 = hour24 % 12;
+		if (hour12 == 0) hour12 = 12; // 24시간제 기준으로 0시, 12시 일 때 -> 12시 
+		
+		int minute2 = now2.getMinute();
+		int second2 = now2.getSecond();
+		
+		System.out.print(hour12 + "시 ");
+		System.out.print(minute2 + "분 ");
+		System.out.println(second2 + "초 ");
+		
+		System.out.println("==========================");
+		
+		
+		LocalDateTime plusDays = now2.plusDays(3);
+		System.out.println("3일후 : " + plusDays);
+		
+		//날짜 시간 비교
+		LocalDate today = LocalDate.now();
+		LocalDate targetDate = LocalDate.of(2025, 12, 25);
+		
+		if(today.isBefore(targetDate)) {//지정한 날짜 시간보다 이전인지
+			System.out.println("오늘은 크리스마스 전입니다");
+		}else if(today.isAfter(targetDate)) System.out.println("크리스 마스 이후입니다");
+		else System.out.println("크리스마스 입니다.");
+		
+		//시간 비교
+		LocalDateTime todayTime = LocalDateTime.now();
+		LocalDateTime deadline = LocalDateTime.of(2025, 11, 27, 15, 23);
+		if(todayTime.isBefore(deadline)) System.out.println("마감 전입니다");
+		else if(todayTime.isAfter(deadline)) System.out.println("마감 지남");
+		else System.out.println("마감");
+		
+		
+		//날짜 시간 차이 구하기
+		LocalDate start = LocalDate.of(2025, 4, 27);
+		LocalDate end = LocalDate.of(2025, 10, 24);
+		
+		//날짜 차이 계산
+		//Period 클래스 : 두 날짜 사이의 간격 계산
+		Period period = Period.between(start, end);
+		
+		System.out.println("연 차이 : " + period.getYears());
+		System.out.println("월 차이 : " + period.getMonths());
+		System.out.println("일 차이 : " + period.getDays());
+		
+		
+		//시간 차이
+		LocalTime start1 = LocalTime.of(10, 0, 0);
+		LocalTime end2 = LocalTime.of(10, 5, 30);
+		
+		//시간 차이 계산
+		//Duration : 두 시간 사이의 간격 계산
+		Duration duration = Duration.between(start1, end2);
+		System.out.println("총 초 : " + duration.getSeconds());
+		
+		
+		//차이 계산 : ChronoUnit
+		//두 날짜/시간 사이의 차이를 원하는 단위로 바로 계산
+		long dayBetween = ChronoUnit.DAYS.between(start, end);
+		System.out.println("전체 일 수 차이 : " + dayBetween + "일");
+		//사용 가능한 단위 : DAYS, WEEKS, MONTHS, TEARS 등등
+		
+		
+		
+		
+	}
+
+}

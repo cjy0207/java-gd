@@ -1,0 +1,31 @@
+package sec01.exam26;
+
+public class ValueCompareExample {
+
+	public static void main(String[] args) {
+		
+		//Wrapper 객체 내부의 값을 비교할 때는 ==을 사요하지 않는 것이 좋음
+		//언박싱 한 값으로 비교하거나, equals 메소드 사용
+		
+		System.out.println("-128 ~ 127 초과값인 경우");
+		Integer obj1 = 300; //자동 박싱
+		Integer obj2 = 300;
+		System.out.println("===결과 : " + (obj1==obj2)); //주소 값 비교 false
+		System.out.println("언박싱 후 == 결과 : " + (obj1.intValue() == obj2.intValue()));
+		System.out.println("equals == 결과 : " + (obj1.equals(obj2))); //Wrapper 클래스의 재정의 된 equals
+		System.out.println();
+		
+		//예외 : 범위값 안에 들어갈 경우 하나의 Integer 객체를 공유한다
+		System.out.println("-128 ~ 127 범위값인 경우");
+		Integer obj3 = 10; //자동 박싱
+		Integer obj4 = 10;
+		System.out.println("===결과 : " + (obj3==obj4)); // true
+		System.out.println("언박싱 후 == 결과 : " + (obj3.intValue() == obj4.intValue()));
+		System.out.println("equals == 결과 : " + (obj3.equals(obj4)));
+		
+		//굳이 예외 범위를 알고 있을 필요 없이 내부이 값을 비교할 때는 무조건 equals 메소드 사용
+	
+
+	}
+
+}
