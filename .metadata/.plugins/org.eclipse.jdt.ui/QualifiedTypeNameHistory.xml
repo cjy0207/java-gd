@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="sec02.exam03_2.CardPayment"/>
-    <fullyQualifiedTypeName name="sec03.exam01.SmartPhone"/>
-    <fullyQualifiedTypeName name="homework.homework2.Cake"/>
-    <fullyQualifiedTypeName name="homework.homework2.GreenTea"/>
-    <fullyQualifiedTypeName name="chap08.homework.homework1.Product"/>
-    <fullyQualifiedTypeName name="chap08.homework.homework2.Dish"/>
-    <fullyQualifiedTypeName name="homework.homework2.ChocolateController"/>
-    <fullyQualifiedTypeName name="homework.homework2.Chocolate"/>
-    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="sec02.exam02.quiz.Calculator"/>
-    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.lang.Runtime"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="homework.homework2.UnSupportedException"/>
@@ -58,6 +43,21 @@
     <fullyQualifiedTypeName name="java.time.temporal.ChronoUnit"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="com.sun.xml.internal.stream.Entity.ScannedEntity"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
+    <fullyQualifiedTypeName name="java.sql.Array"/>
+    <fullyQualifiedTypeName name="sec01.exam02.Student"/>
+    <fullyQualifiedTypeName name="sec01.exam02.AgeComparatorImpl"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.FontUIResource"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="homework01.Book"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="homework01.BookController"/>
+    <fullyQualifiedTypeName name="homework01.BookMenu"/>
 </qualifiedTypeNameHistroy>
