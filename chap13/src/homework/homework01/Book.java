@@ -1,4 +1,4 @@
-package homework01;
+package homework.homework01;
 
 public class Book implements Comparable<Book>{
 	
