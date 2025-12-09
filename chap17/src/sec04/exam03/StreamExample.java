@@ -1,0 +1,25 @@
+package sec04.exam03;
+
+import java.util.stream.IntStream;
+
+public class StreamExample {
+	public static int sum;
+
+	public static void main(String[] args) {
+		
+		IntStream stream = IntStream.rangeClosed(1, 100);
+		stream.forEach(a -> sum += a);
+		System.out.println(sum);
+		
+		//권장방식
+		int sum1 = IntStream.rangeClosed(1, 100).reduce(0, (a,b) -> a+b);
+		System.out.println(sum1);
+		
+		
+		int sum2 = IntStream.rangeClosed(1, 100).sum();
+		System.out.println(sum2);
+		
+
+	}
+
+}
