@@ -1,4 +1,4 @@
-package board;
+package board.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,7 +11,7 @@ public class DBConnection {
 	public Connection conn;
 	public Statement stmt;
 	public PreparedStatement pstmt;
-	public ResultSet re;
+	public ResultSet rs;
 	
 	// JDBC 사용전체 흐름 요약 
 	// 1. 드라이버 로딩
