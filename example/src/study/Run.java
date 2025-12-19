@@ -3,14 +3,17 @@ package study;
 import java.util.*;
 
 public class Run {
-    public static void main(String[] args) {
-    	Set<String> set = new HashSet<>();
-    	set.add("B");
-    	set.add("A");
-    	set.add("D");
-    	set.add("C");
+	public static void main(String[] args) {
+		int n = 10;
+		int[] result = solution(n);
+		System.out.println(result);
 
-    	System.out.println(set);
-    }
+	}
+
+	public static int[] solution(int n) {
+		
+		
+		
+	}
+
 }
-
